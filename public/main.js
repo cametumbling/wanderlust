@@ -5,7 +5,7 @@ const url = 'https://api.foursquare.com/v2/venues/explore?near=';
 
 // OpenWeather Info
 const openWeatherKey = 'bf4279b40ebeb49794cbb0b38c48ef14';
-const weatherURL = 'https://api.openweathermap.org/data/2.5/forecast';
+const weatherURL = 'https://api.openweathermap.org/data/2.5/weather';
 
 // Page Elements
 const $input = $('#city');
@@ -65,18 +65,20 @@ $venue.append(venueContent);
   $destination.append(`<h2>${venues[0].location.city}</h2>`);
 }
 
+
 const renderForecast = (day) => {
     const weatherContent = createWeatherHTML(day);
     $weatherDiv.append(weatherContent);
 };
+
 
 const executeSearch = () => {
   $venueDivs.forEach(venue => venue.empty());
   $weatherDiv.empty();
   $destination.empty();
   $container.css("visibility", "visible");
-  getVenues().then(venues => {return renderVenues(venues)});
-  getForecast().then(forecast => {return renderForecast(forecast)});
+  getVenues().then(venues => renderVenues(venues));
+  getForecast().then(forecast => renderForecast(forecast));
   return false;
 }
 

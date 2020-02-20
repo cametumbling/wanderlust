@@ -2,6 +2,10 @@
   padding: 10px;
 }
 
+ body {
+    background-color: rgba(66, 135, 245, .2);
+  }
+
 main {
   margin: 0px auto 50px auto;
   text-align: center;
@@ -165,8 +169,11 @@ footer {
 }
 
 @media (max-width: 860px) {
+
+
   main {
     background-image: url('https://s3.amazonaws.com/codecademy-content/courses/intermediate-javascript-requests/wanderlust/background_photo_moble.jpg');
+
   }
 
   h1 {
