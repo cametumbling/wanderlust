@@ -1,2 +1,2 @@
 # wanderlust
-A simple travel exploration front-end using the FourSquare and OpenWeather APIs.
+A simple travel exploration front-end using the OpenWeather and FourSquare (old skool!) APIs.
