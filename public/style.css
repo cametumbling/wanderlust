@@ -63,11 +63,6 @@ footer {
   max-width: 900px;
   margin: auto;
   visibility: hidden;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
 }
 
 .weather h2 {
@@ -104,7 +99,7 @@ footer {
   font-family: Work Sans;
   font-size: 22px;
   font-weight: 600;
-  line-height: 0.77;
+  line-height: 1.5;
   text-align: center;
   padding-top: 5px;
 }
@@ -121,6 +116,8 @@ footer {
 .sectiontitle {
   width: 300px;
   align-items: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .sectiontitle h2 {
@@ -136,6 +133,7 @@ footer {
   display: flex;
   justify-content: space-around;
   min-height: 250px;
+  line-height: 20px;
 }
 
 #weather {
