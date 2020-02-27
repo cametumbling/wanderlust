@@ -63,6 +63,11 @@ footer {
   max-width: 900px;
   margin: auto;
   visibility: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .weather h2 {
